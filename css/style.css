@@ -1,0 +1,63 @@
+:root{
+  --blanco:#ffffff;
+  --negro:#212121;
+  --primario:#ffc107;
+  --secundario:#0097a7;
+  --gris:#757575;
+}
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 16px;
+  font-family: 'Krub', sans-serif;
+}
+
+.titulo{
+  text-align: center;
+  font-size: 3.8rem;
+}
+
+.titulo span{
+  font-size: 2rem;
+}
+.container{
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.nav-bg{
+  width: 100%;
+  background-color: var(--secundario);
+  
+}
+.nav-main {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 769px){
+  .nav-main{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+    
+}
+.nav-main a{
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.nav-main a:hover{
+  background-color: var(--primario);
+  color: var(--negro);
+}
+
+.hero{
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
